@@ -1,10 +1,23 @@
-import { POSTER_PATH } from '../globals'
+import { BASE_URL } from '../globals'
+import { useEffect , useState} from 'react'
+import axios from 'axios'
 
 export default function MovieDetails(props) {
 
-return(
-    <div>
-        hello
-    </div>
-)
+
+
+
+    useEffect(() => {
+        if(props.showSelected){
+        console.log(props.movieId)
+        }
+
+    }, [props.selectedMovie])
+
+
+    if(props.showSelected){
+        return(
+            <div> hello</div>
+        )
+    }
 }

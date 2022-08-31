@@ -12,13 +12,19 @@ button:hover {
   background-color: #1e88e5;
 }
 
-.grid {
+.grid{
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-gap: 1em;
   padding: 0.5em;
 }
-
+.app{
+  position:relative;
+}
+.selected-movie{
+  position:absolute;
+  left:75%;
+}
 .card {
   border-radius: 4px;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
